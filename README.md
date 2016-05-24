@@ -12,8 +12,9 @@
 
 ## Read more at
 
-[Python 2.x Compound Statements] https://docs.python.org/2/reference/compound_stmts.html (look for the below note)
+[Python 2.x Compound Statements] (https://docs.python.org/2/reference/compound_stmts.html) 
 
-### Note:
-### There is a subtlety when the sequence is being modified by the loop (this can only occur for mutable sequences . . . 
+#### Look for the note starting like this:
 
+#### Note:
+#### There is a subtlety when the sequence is being modified by the loop (this can only occur for mutable sequences . . . 
