@@ -30,6 +30,14 @@ def calfunc(intnum):
 
 def test_calcfunc():
     assert calfunc(17) == 34
+
+def test_one():
+    testvar = 'hello'
+    assert 'hell' in testvar
+    
+def test_two():
+    teststr = 'welcome'
+    assert hasattr('go', teststr)
     
 if __name__ == "__main__":
     pytest.main()
