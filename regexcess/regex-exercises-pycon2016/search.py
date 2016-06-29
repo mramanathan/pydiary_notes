@@ -5,12 +5,15 @@ These functions return a list of strings matching a condition.
 
 """
 
+import re
 
 with open('dictionary.txt') as dict_file:
     dictionary = dict_file.read()
 
 
 def get_extension(filename):
+    result = re.search(r'\.\w+$', filename)
+    return result.group().split('.')[1]
     """Return the file extension for a full file path."""
 
 
@@ -19,6 +22,14 @@ def tetravocalic(dictionary=dictionary):
 
 
 def hexadecimal(dictionary=dictionary):
+    wordlist = []
+    words = dictionary.split('\n')
+    for this_word in words:
+        result = bool(re.search(r'[cab|deed|defaced|bed|cafe]', this_word))
+        if result:
+            wordlist.append(this_word)
+            
+    return wordlist
     """Return a list of all words consisting solely of the letters A to F."""
 
 

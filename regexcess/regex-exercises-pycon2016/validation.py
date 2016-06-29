@@ -35,7 +35,6 @@ def is_valid_date(string):
 
 
 def is_number(string):
-    #result = bool(re.search(r'^\W{1}\d*\W{1}\d*$', string))
     result = bool(re.search(r'^[+-.]{0,1}\d*[.]\d+$', string))
     if result:
         return True
